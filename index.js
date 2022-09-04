@@ -12,7 +12,7 @@ let marks = JSON.parse(localStorage.getItem("marks"));
 ques.innerText = `What is the value of ${num1} x ${num2} ?`;
 console.log("hello");
 
-btn.addEventListener("submit" , ()=>{
+form.addEventListener("submit" , ()=>{
     if(+answer.value === num1*num2){        
         marks += 1;   
         updateLocalStorage();        
